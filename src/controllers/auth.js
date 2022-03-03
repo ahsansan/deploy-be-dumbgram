@@ -18,7 +18,6 @@ exports.register = async (req, res) => {
       email: joi.string().email().required(),
       username: joi.string().min(4).required(),
       password: joi.string().min(6).required(),
-      image: joi.string().min(3).required(),
     });
 
     // Deklarasi validasi
@@ -55,6 +54,7 @@ exports.register = async (req, res) => {
     const dataUser = await tbUser.create({
       ...data,
       password: hashhedPassword,
+      image: "noname.png",
     });
 
     // Generate token
