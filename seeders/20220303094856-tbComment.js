@@ -18,7 +18,7 @@ module.exports = {
         {
           idFeed: 1,
           idUser: 1,
-          comment: "Chainsaw",
+          comment: "Chainsaw Man emang keren",
           createdAt: "2022-02-16 07:17:46",
           updatedAt: "2022-02-19 20:46:34",
         },
